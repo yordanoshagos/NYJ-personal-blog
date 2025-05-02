@@ -139,10 +139,12 @@ body{
     font-family: wid;
     font-size: 100%;
     top: 3em;
+    cursor: pointer;
 }
 .our-club button:hover{
     background-color: rgb(192, 135, 135);
     border: rgb(192, 135, 135);
+    cursor: pointer;
     color: white;
 }
 .abel-quote{
@@ -202,6 +204,7 @@ form input{
   padding: 0.7em 25em;
   border-radius: 5px;
   border: 1px solid gray;
+  border-radius: 10px;
 }
  #feedback{
   padding: 3em 25em;
@@ -210,7 +213,7 @@ form h2{
   text-align: center;
 }
 form button{
-  padding: 0.2em 9.8em;
+  padding: 0.2em 10.2em;
   border-radius: 10px;
   border: none;
   font-family: kurale;
