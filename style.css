@@ -8,7 +8,8 @@
 }
 body{
     margin: 0;
-    margin-top: -1.5em;
+    padding: 0;
+    /* margin-top: -1.5em; */
     overflow-x: hidden;
     margin-left: 0;
 }
@@ -114,9 +115,9 @@ body{
 }
 
 .our-club {
-    position: fixed; 
+    position: absolute; 
     right: 0; 
-    top: 75%; 
+    top: 255%; 
     transform: translateY(-50%); 
     text-align: center;
     padding: 10px;
@@ -322,179 +323,428 @@ body, html {
   display: block;
 }
 
-@media (max-width: 750px) {
-    .heading h2 {
-      font-size: 150%;
-    }
-    .heading-txt,
-    .thoughts,
-    .perspective {
-      width: 80vw;
-      margin-left: auto;
-      margin-right: auto;
-      top: auto;
-      margin-top: 1em;
-    }
-    .name-for-book {
-      flex-direction: column;
-      gap: 1em;
-    }
-    .name-for-book img,
-    #travor-cover {
-      width: 60vw;
+
+
+@media screen and (max-width: 750px) {
+  body{
+    margin-top: -1em;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .heading h2, .mama, #upcoming-books {
+    font-size: 150%;
+  }
+  .heading-txt{
+    width: 70vw;
+    height: 15vh;
+    margin: 1em auto;
+    font-size: 10px;
+    top: 40%;
+    left: auto;
+  }
+
+  .thoughts,
+  .perspective {
+    width: 80vw;
+    margin: 1em auto;
+    top: auto;
+    left: auto;
+  }
+  .name-for-book {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .name-for-book img,
+  #travor-cover {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
+  }
+  .name-for-book p {
+    width: 80vw;
+    padding: 1em;
+  }
+  .abel-quote {
+    flex-direction: column;
+    padding-left: 1em;
+    gap: 1em;
+  }
+  .insight,
+  .insight-image img,
+  #noah-book,
+  #patricia {
+    width: 80vw;
+    margin: 1em auto;
+  }
+  form {
+    padding: 1em;
+  }
+  form input,
+  #feedback {
+    width: 80vw;
+    padding: 1em;
+  }
+  form button {
+    width: 50%;
+    padding: 0.3em 8.7em;
+    font-size: 80%;
+  }
+  form h2{
+    font-size: 100%;
+  }
+  .our-club {
+    position: static;
+
+    margin-top: 6em;
+
+  }
+  .our-club img{
+    height: 15vh;
+    width: 32vw;
+    margin-left: -10em;
+  }
+  .our-club button{
+    width: 30vh;
+    height: 7vh;
+    font-size: 13px;
+    margin-left: 3em;
+  }
+  .images-born-a-crime {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .images-born-a-crime img {
+    width: 60vw;
+    height: auto;
+  }
+  .name-for-book p,
+  .insight, 
+  .last-txt, 
+  form 
+  footer{
+    font-size: 80%;
+  }
+  footer{
+    margin: 0;
+    padding-left: 0.5em;
+    width: 99vw;
+    font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 999px) {
+  body{
+    overflow-x: hidden;
+  }
+  .heading h2 {
+      font-size: 250%;
+  }
+  .lines p {
+      font-size: 100%;
+  }
+  .heading-txt{
+    align-items: center;
+    font-size: 15px;
+    top: 95%;
+    width: 30vw;
+    height: 12.5vh;
+
+  }
+  .thoughts, .perspective {
+      font-size: 100%;
+      width: 20%;
+      padding: 2em;
+  }
+  .thoughts {
+      left: -5%;
+  }
+  .perspective {
+      right: 7%;
+      margin-top: -24%;
+      height: 11vh;
+  }
+  .mama {
+      font-size: 260%;
+      margin-top: 3em;
+  }
+  .name-for-book {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 3em;
+      padding: 2em;
+  }
+  .name-for-book img {
+      width: 25vw;
+      max-width: none;
       height: auto;
-      margin: 1em auto;
       transform: rotate(0deg);
-    }
-    .name-for-book p {
-      width: 90vw;
-      padding: 1em;
-      font-size: 100%;
-      margin-top: 0;
-    }
-    .our-club {
-      position: static;
-      margin-top: 2em;
-      text-align: center;
-    }
-    .our-club img {
-      width: 40vw;
-      height: auto;
-      right: 0;
-    }
-    .our-club button {
-      right: 0;
-      width: 70%;
-    }
-    .abel-quote {
-      flex-direction: column;
-      padding: 1em;
-      gap: 1em;
-    }
-    .insight {
-      width: 90vw;
-      font-size: 100%;
-      margin-top: 2em;
-    }
-    #noah-book,
-    #patricia {
-      width: 70vw;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 1em;
-    }
-    .menu-toggle {
-      display: block;
+      border: 5px solid;
+      margin-left: 2em;
   }
-  nav:not(#mainMenu) {
-      display: none; 
-  }
-  .main-menu {
-    right: 5px;
-  }
-
-  .main-dropdown {
-    width: 150px;
-  }
-
-  .main-dropdown a {
-    font-size: 12px;
-  }
-  }
-  
-  
-  @media (min-width: 751px) and (max-width: 999px) {
-    .heading h2 {
-      font-size: 200%;
-    }
-    .heading-txt,
-    .thoughts,
-    .perspective {
-      width: 50vw;
-      margin-left: auto;
-      margin-right: auto;
-      top: auto;
-      margin-top: 1em;
-    }
-    .name-for-book {
-      flex-direction: column;
-      gap: 2em;
-    }
-    .name-for-book img,
-    #travor-cover {
-      width: 30vw;
-      height: auto;
-      margin: 0 auto;
-      transform: rotate(-20deg);
-    }
-    .name-for-book p {
-      width: 85vw;
-      padding: 2em;
-      font-size: 110%;
-    }
-    .our-club {
-      position: static;
-      margin-top: 2em;
-      text-align: center;
-    }
-    .our-club img {
+  #travor-cover {
+      transform: rotate(0deg);
+      margin-left: 2em;
+      margin-top: 1.5em;
       width: 25vw;
-      height: auto;
-    }
-    .our-club button {
-      width: auto;
-    }
-    .abel-quote {
-      flex-direction: column;
-      gap: 1.5em;
-      padding: 2em;
-    }
-    .insight {
-      width: 85vw;
-      font-size: 110%;
-    }
-    #noah-book,
-    #patricia {
-      width: 50vw;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 2em;
-    }
-  }
-
-  @media (min-width: 1000px) and (max-width: 1300px) {
-    .heading h2 {
-      font-size: 220%;
-    }
-    .heading-txt {
-      width: 25vw;
-    }
-    .thoughts,
-    .perspective {
-      width: 18vw;
-    }
-    .name-for-book p {
-      width: 50vw;
-      font-size: 110%;
-    }
-    .name-for-book img,
-    #travor-cover {
-      width: 12vw;
       height: 25vh;
-    }
-    .our-club img {
-      width: 8vw;
-      height: 18vh;
-    }
-    .our-club button {
-      font-size: 90%;
-    }
-    .insight {
-      width: 55vw;
-      font-size: 110%;
-    }
-    #noah-book,
-    #patricia {
-      width: 30vw;
-    }
   }
+  .name-for-book p {
+      width: 50%;
+      font-size: 120%;
+      padding: 1em;
+  }
+  .our-club {
+      position: absolute;
+      top: 30%;
+      right: 2%;
+  }
+  .our-club img {
+      width: 20vw;
+      height: 15vh;
+      max-width: none;
+  }
+  .our-club button {
+      font-size: 100%;
+      padding: 1em 2.3em;
+      right: 0;
+  }
+  .abel-quote {
+      flex-direction: column;
+
+      width: 150vw;
+      gap: 2em;
+
+  }
+  .insight {
+      width: 50%;
+      font-size: 110%;
+      margin-top: -0.5em;
+  }
+  .insight-image {
+      display: flex;
+      margin-top: 3em;
+      align-items: flex-start;
+
+  }
+  .insight-image img {
+
+      width: 30vw;
+      max-width: none;
+  }
+  #noah-book {
+      margin-top: 0;
+      margin-left: 0;
+  }
+  #upcoming-books {
+      font-size: 250%;
+      width: 55%;
+  }
+  .images-born-a-crime {
+      justify-content: center;
+      gap: 2%;
+      margin-left: -5%;
+  }
+  .images-born-a-crime img {
+      width: 20%;
+      max-width: none;
+      height: auto;
+  }
+  form {
+      font-size: 130%;
+      padding: 1em 10em;
+  }
+  form input {
+      padding: 0.7em;
+      width: 70%;
+  }
+  #feedback {
+      padding: 2em;
+  }
+  form button {
+      font-size: 130%;
+      padding: 0.5em 5em;
+  }
+  footer {
+      font-size: 120%;
+      padding: 2em;
+      text-align: left;
+  }
+  footer h1 {
+      width: 100%;
+      font-size: 180%;
+  }
+  .company {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+  }
+  .company div {
+      text-align: left;
+  }
+  .company img {
+      width: 15vw;
+      max-width: none;
+  }
+  #marven {
+      text-align: center;
+      font-size: 100%;
+  }
+  .copy {
+      text-align: center;
+      font-size: 90%;
+  }
+  .main-menu svg {
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+  }
+  .main-dropdown {
+      width: 180px;
+      top: 50px;
+      padding: 8px 0;
+  }
+  .main-dropdown a {
+      font-size: 14px;
+      padding: 10px 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  body{
+    overflow-x: hidden;
+    margin-top: -1em;
+  }
+  .heading h2 {
+      font-size: 280%;
+  }
+  .lines p {
+      font-size: 110%;
+  }
+  .heading-txt{
+    width: 30vw;
+    height: 25vh;
+    margin: 1em auto;
+    font-size: 10px;
+    top: 95%;
+    left: auto;
+  }
+  .thoughts, .perspective {
+    height: 18vh;
+      font-size: 110%;
+      width: 18%;
+      padding: 2.5em;
+  }
+  .thoughts {
+      left:-3em;
+  }
+  .perspective{
+    top: -5em;
+    right: 3em;
+    height: 18vh;
+  }
+  .name-for-book img{
+    height: 20vh;
+    width: 18vw;
+  }
+  #travor-cover{
+    height: 20vh;
+    width: 18vw
+  }
+  .insight-image{
+    display: block;
+  }
+  #noah-book{
+    margin-top: 5em;
+    margin-left: -0.5em;
+  }
+  #upcoming-books{
+    width: 70%;
+  }
+  .images-born-a-crime{
+    margin-left: 10em;
+  }
+  .images-born-a-crime img{
+    height: 20vh;
+    width: 20vw;
+
+  }
+  form {
+    font-size: 130%;
+    padding: 1em 10em;
+}
+form input {
+    padding: 1em;
+    width: 85%;
+    height: 5vh;
+
+}
+#feedback {
+    padding: 2em;
+}
+form button {
+    font-size: 130%;
+    padding: 0.5em 8.8em;
+}
+footer {
+    font-size: 120%;
+    padding: 2em;
+    text-align: left;
+}
+footer h1 {
+    width: 100%;
+    font-size: 180%;
+}
+.company {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.company div {
+    text-align: left;
+}
+.company img {
+    width: 15vw;
+    max-width: none;
+}
+#marven {
+    text-align: center;
+    font-size: 100%;
+}
+.copy {
+    text-align: center;
+    font-size: 90%;
+}
+.main-menu svg {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+.main-dropdown {
+    width: 180px;
+    top: 50px;
+    padding: 8px 0;
+}
+.main-dropdown a {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.our-club {
+  position: absolute;
+  top: 430%;
+  right: 2%;
+}
+.our-club img {
+  width: 9vw;
+  height: 15vh;
+  max-width: none;
+  margin-right: 3em;
+}
+.our-club button {
+  font-size: 90%;
+  padding: 1em 2.3em;
+  right: 0;
+}
+}
