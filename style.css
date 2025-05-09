@@ -437,6 +437,7 @@ body, html {
 
 @media screen and (min-width: 751px) and (max-width: 999px) {
   body{
+    /* width: 100vw; */
     overflow-x: hidden;
   }
   .heading h2 {
@@ -462,9 +463,9 @@ body, html {
       left: -5%;
   }
   .perspective {
-      right: 7%;
-      margin-top: -24%;
-      height: 11vh;
+      right: 6%;
+      margin-top: -29%;
+      height: 14vh;
   }
   .mama {
       font-size: 260%;
@@ -513,13 +514,12 @@ body, html {
   }
   .abel-quote {
       flex-direction: column;
-
-      width: 150vw;
+      width: 90vw;
       gap: 2em;
 
   }
   .insight {
-      width: 50%;
+      width: 85%;
       font-size: 110%;
       margin-top: -0.5em;
   }
@@ -558,7 +558,7 @@ body, html {
   }
   form input {
       padding: 0.7em;
-      width: 70%;
+      width: 83%;
   }
   #feedback {
       padding: 2em;
@@ -732,6 +732,7 @@ footer h1 {
     padding: 10px 15px;
 }
 .our-club {
+  display: none;
   position: absolute;
   top: 430%;
   right: 2%;
